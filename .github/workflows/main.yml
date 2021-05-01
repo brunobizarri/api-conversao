@@ -42,6 +42,6 @@ jobs:
           file: # ./src/Dockerfile
           push: true
           tags: 
-            brunobizarri/api-produto-k3d:v${{github.run_number}}
+            brunobizarri/api-produto-k3d:${{github.run_number}}
             brunobizarri/api-produto-k3d:latest
             
