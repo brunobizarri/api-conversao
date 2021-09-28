@@ -1,8 +1,8 @@
-FROM node:current-buster
+FROM node:slim
 WORKDIR /app
 COPY package*.json ./
-RUN npm install -g npm@7.11.1
+RUN npm install -g npm@7.24.1
 RUN npm install
 COPY . .
-EXPOSE 8081
+EXPOSE 80
 CMD ["node","index.js"]
